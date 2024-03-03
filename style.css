@@ -25,6 +25,14 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #e7dae6,
+    #dac8d8,
+    #cdb7ca,
+    #c1a5bc,
+    #b594ae
+  );
 }
 
 .header-content {
@@ -60,7 +68,7 @@ body {
 }
 
 .logo {
-  max-width: 20rem;
+  max-width: 20%;
   object-fit: contain;
   position: absolute;
   top: 120%;
@@ -74,26 +82,56 @@ body {
   margin: 0 auto;
 }
 
-nav ul {
+.navbar_items ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: right;
 }
 
-nav ul li {
+.navbar_items li {
   display: inline;
 }
 
-nav ul li a {
+.navbar_link {
   display: inline-block;
   padding: 0.625rem 1.25rem;
   text-decoration: none;
-  color: var(--perola);
+  color: var(--lilas);
   transition: background-color 0.3s ease;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
-nav ul li a:hover {
+.active {
+  color: var(--perola);
+}
+
+.navbar_link:hover {
   color: var(--lilas);
+}
+
+.navbar_link-toggle {
+  border: 3px solid black;
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar_items_right {
+  display: none;
+}
+
+@media all and (max-width: 1400px) {
+  .navbar_link {
+    font-size: 1.3rem;
+  }
+}
+@media all and (max-width: 1200px) {
+  .navbar_link {
+    padding: 0.625rem 0.9rem;
+  }
+}
+@media all and (max-width: 800px) {
+}
+@media all and (max-width: 600px) {
 }

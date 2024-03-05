@@ -35,6 +35,8 @@ body {
   );
 }
 
+/*============= HEADER =============*/
+
 .header-content {
   text-align: center;
 }
@@ -70,6 +72,8 @@ a {
   color: var(--perola);
   text-decoration: none;
 }
+
+/*============= NAVBAR =============*/
 
 .navbar {
   position: relative;
@@ -127,6 +131,8 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: var(--perola);
 }
+
+/*============= MEDIA QUERIES =============*/
 
 @media all and (max-width: 1200px) {
   .nav-menu {

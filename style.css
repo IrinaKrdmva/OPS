@@ -24,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Avenir", sans-serif;
   background-image: linear-gradient(
     to bottom,
     #e7dae6,
@@ -88,9 +88,9 @@ a {
 }
 
 .nav-logo {
-  max-width: 17rem;
-  top: 5rem;
-  left: 5rem;
+  max-width: 20rem;
+  top: 6rem;
+  left: 6rem;
   object-fit: contain;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -132,6 +132,58 @@ a {
   background-color: var(--perola);
 }
 
+/*============= SERVICOS =============*/
+
+.servicos {
+  position: relative;
+  border: 2px solid red;
+  border-radius: 2rem;
+  margin: 10rem 8rem;
+  padding: 1.5rem;
+  max-height: 50rem;
+  text-align: center;
+  color: var(--perola);
+  background-color: var(--lilas);
+}
+
+.servicos-title {
+  font-size: 3.4rem;
+  margin-top: 2rem;
+}
+
+.servicos-subtitle {
+  font-size: 2.7rem;
+  margin-top: 1rem;
+}
+
+.servicos-text {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 2rem 7rem;
+}
+
+.servicos-text2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.servicos-img {
+  width: 90%;
+  margin-top: -22rem;
+}
+
+.servicos-btn {
+  background-color: var(--roxo);
+  color: var(--perola);
+  border: none;
+  border-radius: 5rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  position: absolute;
+  top: 40rem;
+  left: 33rem;
+}
 /*============= MEDIA QUERIES =============*/
 
 @media all and (max-width: 1200px) {

@@ -23,6 +23,9 @@ html {
 }
 
 body {
+  display: grid;
+  place-content: center;
+  min-block-size: 100vh;
   margin: 0;
   font-family: "Avenir", sans-serif;
   background-image: linear-gradient(
@@ -34,6 +37,11 @@ body {
     #b594ae
   );
   min-height: 100vh;
+}
+
+main {
+  overflow: hidden;
+  margin: 0;
 }
 
 /*============= HEADER =============*/
@@ -211,18 +219,6 @@ nav li:first-child {
 
   .menu-btn {
     display: block;
-  }
-
-  .header-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .header-content h2 {
-    font-size: 1.5rem;
-  }
-
-  .sidebar {
-    width: 50%;
   }
 }
 

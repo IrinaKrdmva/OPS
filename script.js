@@ -1,18 +1,10 @@
 "use strict";
-const hamburguer = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLogo = document.querySelector(".nav-logo");
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+}
 
-hamburguer.addEventListener("click", function () {
-  hamburguer.classList.toggle("active");
-  navMenu.classList.toggle("active");
-  navLogo.classList.toggle("active");
-});
-
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", function () {
-    hamburguer.classList.remove("active");
-    navMenu.classList.remove("active");
-    navLogo.classList.remove("active");
-  })
-);
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}

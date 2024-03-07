@@ -114,9 +114,9 @@ nav li:first-child {
 
 .nav-logo {
   position: absolute;
-  max-width: 18rem;
+  max-width: 10rem;
   object-fit: contain;
-  transform: translate(-20%, -18%);
+  transform: translate(20%, 6%);
 }
 
 .nav-branding {
@@ -199,9 +199,26 @@ nav li:first-child {
   cursor: pointer;
   margin-bottom: 2rem;
 }
+
+/*============= FEEDBACK =============*/
+.feedback {
+  margin: 1rem 5rem;
+}
+.feedback-title {
+  color: var(--perola);
+  font-size: 3rem;
+}
+
+.feedback-img {
+  width: 16rem;
+}
 /*============= MEDIA QUERIES =============*/
 
 @media all and (max-width: 1200px) {
+  .nav-logo {
+    max-width: 9rem;
+  }
+
   .servicos {
     margin: 10rem 5rem;
   }
@@ -229,6 +246,10 @@ nav li:first-child {
     font-size: 0.85rem;
   }
 
+  .nav-logo {
+    max-width: 8rem;
+  }
+
   .servicos {
     margin: 10rem 4rem;
   }
@@ -253,6 +274,10 @@ nav li:first-child {
 @media all and (max-width: 800px) {
   .hideOnMobile {
     display: none;
+  }
+
+  .nav-logo {
+    max-width: 8rem;
   }
 
   .menu-btn {
@@ -305,6 +330,10 @@ nav li:first-child {
 
   .header-content h2 {
     font-size: 1rem;
+  }
+
+  .nav-logo {
+    max-width: 6rem;
   }
 
   .sidebar {

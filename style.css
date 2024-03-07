@@ -66,6 +66,10 @@ body {
 
 /*============= NAVBAR =============*/
 nav {
+  font-family: "Avenir", sans-serif;
+  font-weight: var(--medium);
+  font-size: 1rem;
+  position: relative;
   background-color: #7c376a;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -84,7 +88,7 @@ nav li {
 
 nav a {
   height: 100%;
-  padding: 0 1.875rem;
+  padding: 0 1.25rem;
   color: var(--perola);
   text-decoration: none;
   text-transform: uppercase;
@@ -98,6 +102,17 @@ nav a:hover {
 
 nav li:first-child {
   margin-right: auto;
+}
+
+.nav-logo {
+  position: absolute;
+  max-width: 18rem;
+  object-fit: contain;
+  transform: translate(-20%, -18%);
+}
+
+.nav-branding {
+  color: #7c376a;
 }
 
 .sidebar {
@@ -180,20 +195,12 @@ nav li:first-child {
 /*============= MEDIA QUERIES =============*/
 
 @media all and (max-width: 1200px) {
-  .nav-menu {
-    gap: 2rem;
-  }
-  .nav-link {
-    font-size: 1.2rem;
-  }
 }
 
 @media all and (max-width: 1000px) {
-  .nav-menu {
-    gap: 1rem;
-  }
-  .nav-link {
-    font-size: 1rem;
+  nav a {
+    padding: 0 1rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -212,6 +219,10 @@ nav li:first-child {
 
   .header-content h2 {
     font-size: 1.5rem;
+  }
+
+  .sidebar {
+    width: 50%;
   }
 }
 

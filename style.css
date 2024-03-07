@@ -151,11 +151,9 @@ nav li:first-child {
 /*============= SERVICOS =============*/
 
 .servicos {
-  position: relative;
-  border: 2px solid red;
-  border-radius: 2rem;
-  margin: 10rem 8rem;
-  padding: 1.5rem;
+  border-radius: 2.7rem;
+  margin: 10rem 10rem;
+  padding: 2rem;
   max-height: 50rem;
   text-align: center;
   color: var(--perola);
@@ -163,29 +161,31 @@ nav li:first-child {
 }
 
 .servicos-title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   margin-top: 2rem;
 }
 
 .servicos-subtitle {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   margin-top: 1rem;
 }
 
 .servicos-text {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 300;
-  margin: 2rem 7rem;
+  margin-top: 1rem;
 }
 
 .servicos-text2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
 .servicos-img {
   width: 90%;
-  margin-top: -22rem;
+  height: 0%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .servicos-btn {
@@ -193,22 +193,60 @@ nav li:first-child {
   color: var(--perola);
   border: none;
   border-radius: 5rem;
-  width: 20rem;
+  width: 16rem;
   font-size: 1.5rem;
-  padding: 1.2rem;
-  position: absolute;
-  top: 40rem;
-  left: 33rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
 }
 /*============= MEDIA QUERIES =============*/
 
 @media all and (max-width: 1200px) {
+  .servicos {
+    margin: 10rem 5rem;
+  }
+
+  .servicos-title {
+    font-size: 2.8rem;
+  }
+
+  .servicos-subtitle {
+    font-size: 2rem;
+  }
+
+  .servicos-text {
+    font-size: 1.8rem;
+  }
+
+  .servicos-text2 {
+    font-size: 1.3rem;
+  }
 }
 
 @media all and (max-width: 1000px) {
   nav a {
     padding: 0 1rem;
     font-size: 0.85rem;
+  }
+
+  .servicos {
+    margin: 10rem 4rem;
+  }
+
+  .servicos-title {
+    font-size: 2.6rem;
+  }
+
+  .servicos-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .servicos-text {
+    font-size: 1.8rem;
+  }
+
+  .servicos-text2 {
+    font-size: 1.1rem;
   }
 }
 
@@ -220,9 +258,44 @@ nav li:first-child {
   .menu-btn {
     display: block;
   }
+
+  .servicos {
+    margin: 10rem 3rem;
+  }
+
+  .servicos-title {
+    font-size: 2.4rem;
+  }
+
+  .servicos-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .servicos-text {
+    font-size: 1.5rem;
+  }
+
+  .servicos-text2 {
+    font-size: 1rem;
+  }
 }
 
 @media all and (max-width: 700px) {
+  .servicos-title {
+    font-size: 2.2rem;
+  }
+
+  .servicos-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .servicos-text {
+    font-size: 1.3rem;
+  }
+
+  .servicos-text2 {
+    font-size: 0.75rem;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -236,5 +309,26 @@ nav li:first-child {
 
   .sidebar {
     width: 100%;
+  }
+
+  .servicos-title {
+    font-size: 1.8rem;
+  }
+
+  .servicos-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .servicos-text {
+    font-size: 0.9rem;
+  }
+
+  .servicos-text2 {
+    font-size: 0.7rem;
+  }
+
+  .servicos-btn {
+    width: 10rem;
+    font-size: 0.75rem;
   }
 }

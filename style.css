@@ -46,6 +46,7 @@ main {
 
 section {
   position: relative;
+  margin-bottom: 10rem;
 }
 
 /*============= HEADER =============*/
@@ -205,7 +206,8 @@ nav li:first-child {
 }
 
 /*============= FEEDBACK =============*/
-.feedback {
+.feedback,
+.colaboradoras {
   margin: 1rem 5rem;
 }
 .feedback-title {
@@ -235,29 +237,29 @@ nav li:first-child {
   width: 100%;
 }
 
-.testimonialBox {
+.feedbackBox {
   position: relative;
   width: 100%;
   padding: 2.5rem;
   padding-top: 5.625rem;
 }
 
-.testimonialBox .quote {
+.feedbackBox .quote {
   width: 3.5rem;
   margin-bottom: 2rem;
 }
 
-.testimonialBox .content p {
+.feedbackBox .content p {
   color: var(--perola);
 }
 
-.testimonialBox .details {
+.feedbackBox .details {
   display: flex;
   align-items: center;
   margin-top: 1.25rem;
 }
 
-.testimonialBox .details .imgBx {
+.feedbackBox .details .imgBx {
   position: relative;
   width: 3.75rem;
   height: 3.75rem;
@@ -266,7 +268,7 @@ nav li:first-child {
   margin-right: 0.625rem;
 }
 
-.testimonialBox .details .imgBx img {
+.feedbackBox .details .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -275,7 +277,7 @@ nav li:first-child {
   object-fit: cover;
 }
 
-.testimonialBox .details h3 {
+.feedbackBox .details h3 {
   font-size: 1rem;
   font-weight: var(--medium);
   letter-spacing: 0.0625rem;
@@ -283,9 +285,160 @@ nav li:first-child {
   line-height: 1.1em;
 }
 
-.testimonialBox .details h3 span {
+.feedbackBox .details h3 span {
   font-size: 0.75rem;
   color: var(--perola);
+}
+/*============= COLABORADORAS =============*/
+.colaboradoras-titulo {
+  color: var(--roxo);
+  font-size: 3rem;
+}
+
+.colaboradorasBox {
+  display: flex;
+  background-color: #7c376a;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 5px #333;
+}
+
+.image-area {
+  margin-top: -20%;
+  left: 17%;
+  transform: translate(-50%, 3%);
+  position: relative;
+  margin: 1rem;
+}
+
+.image-area img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.image-area h2 {
+  margin-top: 0.625rem;
+}
+
+.img-wrapper {
+  width: 23rem;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.img-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 180%;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  transform: skew(45deg);
+  transition: 0.5s;
+}
+
+.img-wrapper:hover:before {
+  left: -180%;
+}
+
+.img-wrapper img {
+  height: 25rem;
+  width: auto;
+  filter: grayscale(100%);
+  transition: 2s;
+}
+
+.img-wrapper:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.img-wrapper h2 {
+  background: var(--lilas);
+  font-family: "Candara";
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.625rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: perspective(25rem) rotateY(90deg);
+  transform-origin: right;
+  transition: 1s;
+}
+
+.img-wrapper:hover h2 {
+  transform: perspective(25rem) rotateY(0deg);
+}
+
+.img-wrapper ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li {
+  background: #333;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  transform: perspective(50rem) rotateY(90deg);
+  transition: 0.5s;
+  transform-origin: left;
+}
+
+.img-wrapper:hover ul li {
+  transform: perspective(50rem) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3) {
+  transition-delay: 0.8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4) {
+  transition-delay: 1s;
+}
+
+.img-wrapper ul li a {
+  color: var(--lilas);
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i {
+  color: var(--lilas);
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0);
 }
 /*============= MEDIA QUERIES =============*/
 

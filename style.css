@@ -293,27 +293,25 @@ nav li:first-child {
 .colaboradoras-titulo {
   color: var(--roxo);
   font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Candara", sans-serif;
+  font-weight: var(--bold);
 }
 
 .colaboradorasBox {
+  position: relative;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #7c376a;
-  width: 100%;
   border-radius: 1rem;
   box-shadow: 3px 3px 5px #333;
 }
 
-.image-area {
-  margin-top: -20%;
-  left: 17%;
-  transform: translate(-50%, 3%);
-  position: relative;
-  margin: 1rem;
-}
-
 .image-area img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
+  border-radius: 1rem;
 }
 
 .image-area {
@@ -321,7 +319,7 @@ nav li:first-child {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin: 2rem 0;
 }
 
 .image-area h2 {
@@ -466,6 +464,10 @@ nav li:first-child {
   .servicos-text2 {
     font-size: 1.3rem;
   }
+
+  .colaboradorasBox {
+    justify-content: center;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -496,6 +498,16 @@ nav li:first-child {
 
   .servicos-text2 {
     font-size: 1.1rem;
+  }
+
+  .colaboradorasBox {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-area {
+    left: 50%;
   }
 }
 
@@ -535,10 +547,6 @@ nav li:first-child {
   .feedback {
     text-align: center;
   }
-
-  .colaboradorasBox {
-    display: block;
-  }
 }
 
 @media all and (max-width: 700px) {
@@ -556,6 +564,17 @@ nav li:first-child {
 
   .servicos-text2 {
     font-size: 0.75rem;
+  }
+
+  .image-area {
+    left: 47%;
+  }
+
+  .image-area img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
   }
 }
 

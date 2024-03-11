@@ -535,6 +535,10 @@ nav li:first-child {
   .feedback {
     text-align: center;
   }
+
+  .colaboradorasBox {
+    display: block;
+  }
 }
 
 @media all and (max-width: 700px) {

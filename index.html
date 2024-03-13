@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!--Box Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -364,7 +369,62 @@
       </section>
       <!-- ===== CONTACT US ===== -->
       <section>
-        <div class="contactus"></div>
+        <div class="contactus">
+          <div class="contact-content">
+            <div class="contact-text">
+              <h1>
+                Tem alguma dúvida? <br />
+                Fale connosco!
+              </h1>
+            </div>
+            <form action="" class="contact-form">
+              <div class="contact-form-div">
+                <label for="nome" class="contact-form-tag">Nome</label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  placeholder="Nome completo"
+                  class="contact-form-input"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="contact-form-div">
+                <label for="correio" class="contact-form-tag">E-mail</label>
+                <input
+                  type="email"
+                  name="correio"
+                  id="correio"
+                  placeholder="O seu e-mail"
+                  class="contact-form-input"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="contact-form-div contact-form-area">
+                <label for="project" class="contact-form-tag"
+                  >A sua questão</label
+                >
+                <textarea
+                  name="project"
+                  id="project"
+                  cols="30"
+                  rows="10"
+                  placeholder="Como podemos ajudar"
+                  class="contact-form-input"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn">
+                Enviar <i class="bx bx-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="contact-img">
+            <img src="./images/Fatima.png" alt="Fatima" />
+          </div>
+        </div>
       </section>
       <!-- ===== BRANDS ===== -->
       <section>

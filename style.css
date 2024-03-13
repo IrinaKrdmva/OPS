@@ -207,7 +207,8 @@ nav li:first-child {
 
 /*============= FEEDBACK =============*/
 .feedback,
-.colaboradoras {
+.colaboradoras,
+.contactus {
   margin: 1rem 5rem;
 }
 .feedback-title {
@@ -361,6 +362,88 @@ nav li:first-child {
   box-shadow: 0 1.25rem 1.25rem rgba(black, 0.3);
   opacity: 0.8;
 }
+/*============= CONTACT US =============*/
+.contactus {
+  background-color: #7c376a;
+  display: flex;
+  justify-content: space-between;
+  color: var(--perola);
+  font-family: "Avenir", sans-serif;
+  border-radius: 1rem;
+}
+
+.contact-img img {
+  width: 35rem;
+}
+
+.contact-text h1 {
+  margin: 5rem;
+  font-size: 3.5rem;
+}
+
+.contact-form {
+  margin-left: 5rem;
+  padding-bottom: 2rem;
+}
+
+.contact-form-div {
+  position: relative;
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+
+.contact-form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--lilas);
+  background: none;
+  color: var(--lilas);
+  outline: none;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+.contact-form-input::placeholder {
+  font-family: "Avenir", sans-serif;
+  color: var(--lilas);
+}
+
+.contact-form-tag {
+  position: absolute;
+  top: -1.5rem;
+  left: 1.25rem;
+  font-size: 1rem;
+  padding: 0.25rem;
+  z-index: 10;
+}
+
+.contact-form-area {
+  height: 11rem;
+}
+
+.contact-form-area textarea {
+  resize: none;
+}
+
+.btn {
+  border-radius: 2.1875rem;
+  color: var(--perola);
+  background-color: var(--lilas);
+  font-size: 1.125rem;
+  width: 20%;
+  padding: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--perola);
+  color: #7c376a;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
 
 /*============= MEDIA QUERIES =============*/
 
@@ -387,10 +470,6 @@ nav li:first-child {
 
   .servicos-text2 {
     font-size: 1.3rem;
-  }
-
-  .colaboradorasBox {
-    justify-content: center;
   }
 
   .card-container {
@@ -426,12 +505,6 @@ nav li:first-child {
 
   .servicos-text2 {
     font-size: 1.1rem;
-  }
-
-  .colaboradorasBox {
-    display: block;
-    justify-content: center;
-    align-items: center;
   }
 
   .image-area {

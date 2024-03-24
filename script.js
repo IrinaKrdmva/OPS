@@ -1,6 +1,6 @@
 "use strict";
 
-//----SIDEBAR----
+//---- SIDEBAR ----
 function showSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "flex";
@@ -11,7 +11,7 @@ function hideSidebar() {
   sidebar.style.display = "none";
 }
 
-//----FEEDBACK SWIPER----
+//---- FEEDBACK SWIPER ----
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -30,7 +30,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//----BRANDS SCROLLER----
+//---- BRANDS SCROLLER ----
 
 const scrollers = document.querySelectorAll(".scroller");
 
@@ -52,3 +52,5 @@ function addAnimation() {
     });
   });
 }
+
+//---- CONTACT PAGE ----
